@@ -1,0 +1,99 @@
+.stores {
+  padding: 80px;
+  background: #f0f4f8;
+}
+
+.store-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 60px;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+  transition:all 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: #000000;
+}
+
+.card-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #fff;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instagram-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: transparent;
+  color: #dc2743;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.5s;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.instagram-btn:hover {
+  color: #fff;
+  background: linear-gradient(45deg, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
+}
+
+.card-images {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 10px;
+  transition: height 0.4s ease, padding 0.4s ease;
+}
+
+.card:hover .card-images {
+  height: 200px;
+  padding-top: 10px;
+}
+
+.card-images img {
+  width: 30%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,1);
+} 

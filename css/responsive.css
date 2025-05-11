@@ -1,0 +1,154 @@
+@media (max-width: 992px) {
+    .home h1 {
+        font-size: 42px;
+    }
+    
+    .home p {
+        font-size: 16px;
+    }
+    
+    .action-cards, .store-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+ 
+    
+    .home {
+        padding-top: 60px;
+    }
+    
+    .home h1 {
+        font-size: 36px;
+    }
+    
+    .home-content {
+        padding: 0 20px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+    }
+    
+    .action-card, .card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .home h1 {
+        font-size: 28px;
+    }
+    
+    .home p {
+        font-size: 14px;
+    }
+    
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .section-title p {
+        font-size: 14px;
+    }
+    
+    .action-card, .card {
+        padding: 20px;
+    }
+    
+    .card-header img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card-content p {
+        font-size: 13px;
+    }
+    
+    .card:hover .card-images {
+        height: 150px;
+    }
+    
+    .card-images img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 20px;
+    }
+    
+    .home h1 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        font-size: 14px;
+    }
+    
+    .action-card i {
+        font-size: 30px;
+    }
+    
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .card-header img {
+        margin-bottom: 10px;
+    }
+    
+    .card:hover .card-images {
+        height: 120px;
+    }
+    
+    .card-images img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .team-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .team-info {
+        padding: 15px;
+    }
+    
+    .team-info h3 {
+        font-size: 18px;
+    }
+    
+    .team-info span {
+        font-size: 14px;
+    }
+    
+    .team-info p {
+        font-size: 13px;
+    }
+}
