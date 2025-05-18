@@ -6,20 +6,18 @@
     <title>Cyber Tech | ExpoTech ECIT Adilina de Sousa Diniz</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/actions.css">
-    <link rel="stylesheet" href="/css/stores.css">
-    <link rel="stylesheet" href="/css/team.css">
-    <link rel="stylesheet" href="/css/animations.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="./css/actions.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/stores.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/team.css">
 </head>
-
 <body>
     <header>
-        <div class="container">
+        <div class="header-container">
+            <div class="logo">Cyber<span>Tech</span></div>
             <nav>
-                <div class="logo">Cyber<span>Tech</span></div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#acoes">Ações</a></li>
@@ -28,252 +26,146 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
                 <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="home" id="home">
-        <div class="container">
-            <div class="home-content">
-                <h1>Cyber Tech - ExpoTech ECIT Adilina de Souza Diniz</h1>
-                <p>Um projeto desenvolvido pelos alunos do 3º ano técnico para impulsionar o comércio local através da tecnologia.</p>
-                <a href="#acoes" class="btn">Conheça nossas ações</a>
+    <main>
+        <section class="home" id="home">
+            <div class="particles" id="particles-js"></div>
+            <div class="container">
+                <div class="home-content">
+                    <h1>Cyber Tech - ExpoTech<br>ECIT Adilina de Sousa Diniz</h1>
+                    <p>Um projeto desenvolvido pelos alunos do 3º ano técnico para impulsionar o comércio local através da tecnologia.</p>
+                    <a href="#acoes" class="btn">Conheça nossas ações</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="actions" id="acoes">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nossas Ações</h2>
-                <p>Conheça as iniciativas que estamos desenvolvendo para ajudar o comércio local.</p>
+        <section class="actions" id="acoes">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossas Ações</h2>
+                    <p>Conheça as iniciativas que estamos desenvolvendo para ajudar o comércio local.</p>
+                </div>
+                <div class="act-container">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="/imagens/publicacoes/topstylus/p1.jpg" alt="Projeto TopStylus">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/imagens/publicacoes/topstylus/p2.jpg" alt="Workshop de marketing">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/imagens/publicacoes/topstylus/p3.jpg" alt="Soluções tecnológicas">
+                        </div>
+                        <a class="prev">❮</a>
+                        <a class="next">❯</a>
+                    </div>
+                    <div class="action-cards">
+                        <div class="action-card">
+                            <i class="fa fa-store"></i>
+                            <h3>Divulgação Digital</h3>
+                            <p>Criamos plataformas online para aumentar a visibilidade dos pequenos negócios.</p>
+                        </div>
+                        <div class="action-card">
+                            <i class="fa fa-chart-line"></i>
+                            <h3>Consultoria em Marketing</h3>
+                            <p>Orientamos comerciantes sobre estratégias para atrair mais clientes.</p>
+                        </div>
+                        <div class="action-card">
+                            <i class="fa fa-mobile-alt"></i>
+                            <h3>Tecnologia Acessível</h3>
+                            <p>Implementamos soluções tecnológicas de baixo custo para otimizar vendas.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="action-cards">
-                <div class="action-card">
-                    <i class="fas fa-store"></i>
-                    <h3>Divulgação Digital</h3>
-                    <p>Criamos plataformas online para aumentar a visibilidade dos pequenos negócios.</p>
-                </div>
-                <div class="action-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Consultoria em Marketing</h3>
-                    <p>Orientamos comerciantes sobre estratégias para atrair mais clientes.</p>
-                </div>
-                <div class="action-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Tecnologia Acessível</h3>
-                    <p>Implementamos soluções tecnológicas de baixo custo para otimizar vendas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="stores" id="lojas">
-        <div class="container">
-            <div class="section-title">
-                <h2>Lojas Parceiras</h2>
-                <p>Conheça os estabelecimentos locais envolvidos em nosso projeto.</p>
-            </div>
-            <div class="store-cards">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/lamaison.jpg" alt="">
-                      <div><strong>La Maison</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/use.lamaison?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Elegância, estilo e conforto.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/lamaison/p1.jpg" alt="">
-                      <img src="/imagens/publicacoes/lamaison/p2.jpg" alt="">
-                      <img src="/imagens/publicacoes/lamaison/p3.jpg" alt="">
+        <section class="stores" id="lojas">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Lojas Parceiras</h2>
+                    <p>Conheça os estabelecimentos locais envolvidos em nosso projeto.</p>
+                </div>
+                <div class="store-cards">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/imagens/lojas/lamaison.jpg" alt="La Maison">
+                            <div><strong>La Maison</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/use.lamaison" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Elegância, estilo e conforto.</p>
+                        </div>
+                        <div class="card-images">
+                            <img src="/imagens/publicacoes/lamaison/p1.jpg" alt="Produto La Maison">
+                            <img src="/imagens/publicacoes/lamaison/p2.jpg" alt="Produto La Maison">
+                            <img src="/imagens/publicacoes/lamaison/p3.jpg" alt="Produto La Maison">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/dd.jpg" alt="">
-                      <div><strong>Drograria Diamante</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/topstylus_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Mais saúde e economia para você.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/drogdiamante/p1.jpg" alt="">
-                      <img src="/imagens/publicacoes/drogdiamante/p2.jpg" alt="">
-                      <img src="/imagens/publicacoes/drogdiamante/p3.jpg" alt="">
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nosso Time</h2>
+                    <p>Conheça os talentos por trás do nosso sucesso</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="/imagens/equipes/team1.jpg" alt="Time de marketing">
+                        </div>
+                        <div class="team-info">
+                            <h3>Time de marketing</h3>
+                            <p>Especialista em estratégias digitais e crescimento de marca.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/topstylus.jpg" alt="">
-                      <div><strong>TopStylus</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/caprichos.byjannyvilar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Moda casual e acessórios com estilo urbano e autêntico.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/topstylus/p1.jpg" alt="">
-                      <img src="/imagens/publicacoes/topstylus/p2.jpg" alt="">
-                      <img src="/imagens/publicacoes/topstylus/p3.jpg" alt="">
-                    </div>
-               </div>
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/ff.jpg" alt="">
-                      <div><strong>FarmaFranco</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/farmafranco2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Melhores preços e melhor atendimento.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/farmafranco/p1.jpg" alt="">
-                      <img src="/imagens/publicacoes/farmafranco/p2.jpg" alt="">
-                      <img src="/imagens/publicacoes/farmafranco/p3.jpg" alt="">
-                    </div>
-               </div>
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/pirralhos.jpg" alt="">
-                      <div><strong>Pirralhos kids e teens</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/pirralhos_kidseteens?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Trabalhamos desde o recém nascido ate 18 anos.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/pirralhos/p1.jpg" alt="">
-                      <img src="/imagens/publicacoes/pirralhos/p2.jpg" alt="">
-                      <img src="/imagens/publicacoes/pirralhos/p3.jpg" alt="">
-                    </div>
-               </div>
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/topstylus.jpg" alt="">
-                      <div><strong>Zandra Modas</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/lizandramodas_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Confie no que você veste!.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/zandra/p1.jpeg" alt="">
-                      <img src="/imagens/publicacoes/zandra/p2.jpeg" alt="">
-                      <img src="/imagens/publicacoes/zandra/p3.jpeg" alt="">
-                    </div>
-               </div>
-                <div class="card">
-                    <div class="card-header">
-                      <img src="/imagens/lojas/fp.webp" alt="">
-                      <div><strong>Dra Frankiliane</strong></div>
-                      <a class="instagram-btn" href="https://www.instagram.com/caprichos.byjannyvilar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>Fisioterapeuta e instrutora de pilates.</p>
-                    </div>
-                    <div class="card-images">
-                      <img src="/imagens/publicacoes/fp/p1.webp" alt="">
-                      <img src="/imagens/publicacoes/fp/p2.webp" alt="">
-                      <img src="/imagens/publicacoes/fp/p3.webp" alt="">
-                    </div>
-               </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="team" id="team">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nosso Time</h2>
-                <p>Conheça os talentos por trás do nosso sucesso</p>
-            </div>
-    
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-img">
-                        <img src="/imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.56.jpeg" alt="">                          
-                    </div>
-                    <div class="team-info">
-                        <h3>Time de marketing</h3>
-                        <p>Especialista em estratégias digitais e crescimento de marca.</p>
-                    </div>
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Entre em Contato</h2>
+                    <p>Tem alguma dúvida ou quer participar do projeto?</p>
                 </div>
-    
-                <div class="team-card" data-category="design">
-                    <div class="team-img">
-                        <img src="/imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.55.jpeg" alt="">   
-                    </div>
-                    <div class="team-info">
-                        <h3>Time de design</h3>
-                        <p>Cria experiências visuais memoráveis e interfaces intuitivas.</p>
-                    </div>
-                </div>
-    
-                <div class="team-card" data-category="dev">
-                    <div class="team-img">
-                        <img src="/imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.56 (2).jpeg"  alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>Time opŕacional</h3>
-                        <p>Garante que todos os processos funcionem sem problemas.</p>
-                    </div>
-                </div>
-    
-                <div class="team-card" data-category="operacional">
-                    <div class="team-img">
-                        <img src="/imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.56 (3).jpeg"  alt="">                   
-                    </div>
-                    <div class="team-info">
-                        <h3>Time de desenvolvedores</h3>
-                        <p>Transforma ideias em soluções tecnológicas robustas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contato">
-        <div class="container">
-            <div class="section-title">
-                <h2>Entre em Contato</h2>
-                <p>Tem alguma dúvida ou quer participar do projeto? Mande uma mensagem!</p>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" placeholder="Seu nome" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" placeholder="Seu email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" required></textarea>
+                        <textarea id="message" placeholder="Sua mensagem" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Enviar Mensagem</button>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
             </div>
-            <p class="copyright">Cyber Tech © 2023 | Projeto desenvolvido pelos alunos do 3º ano técnico da ECIT Adilina de Souza Diniz</p>
+            <p class="copyright">Cyber Tech © 2023 | Projeto desenvolvido pelos alunos do 3º ano técnico</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
