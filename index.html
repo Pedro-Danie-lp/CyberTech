@@ -15,21 +15,27 @@
         </head>
 
     <body>
-        <header>
-            <div class="header-container">
-                <div class="logo">Cyber<span>Tech</span></div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#acoes">Ações</a></li>
-                        <li><a href="#lojas">Lojas</a></li>
-                        <li><a href="#team">Time</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
+       <header>
+    <div class="header-container">
+        <div class="logo">Cyber<span>Tech</span></div>
+        
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#acoes">Ações</a></li>
+                <li><a href="#lojas">Lojas</a></li>
+                <li><a href="#team">Time</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </div>
+</header>
         <section class="home" id="home">
             <div class="particles" id="particles-js"></div>
             <div class="container">
@@ -450,6 +456,32 @@
                 window.addEventListener('scroll', checkTeamVisibility);
                 checkTeamVisibility();
                 });
+
+                document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            document.querySelector('header').classList.add('scrolled');
+        } else {
+            document.querySelector('header').classList.remove('scrolled');
+        }
+    });
+    
+    const navItems = document.querySelectorAll('.nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+    });
+});
         
         </script>
     </body>

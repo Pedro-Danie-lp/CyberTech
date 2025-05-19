@@ -24,23 +24,21 @@ body {
 }
 
 .header-container {
-    margin: 0;
-    padding: 0 50px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    margin: 0;
 }
 
-header {  
+header {
     background: rgba(0, 0, 0, 0.164);
     backdrop-filter: blur(10px);
-    position: fixed;    
+    position: fixed;
     width: 100%;
-    z-index: 2;
-    padding: 15px 0;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+    transition: all 0.4s ease;
     border-bottom: 1px solid rgba(0, 251, 255, 0.1);
-    text-decoration: none;
 }
 
 header.scrolled {
@@ -52,52 +50,31 @@ header.scrolled {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--light);
-    position: relative;
-    z-index: 10;
-    transition: all 0.3s ease;
+    color: white;
+    z-index: 1001;
 }
 
 .logo span {
-    color: var(--primary);
-    position: relative;
+    color: #00fbff;
 }
 
-.logo span::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--primary);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.logo:hover span::after {
-    transform: scaleX(1);
-    transform-origin: left;
+.nav-menu {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
     display: flex;
     gap: 25px;
-    list-style-type: none;
-}
-
-.nav-links li {
-    position: relative;
+    list-style: none;
 }
 
 .nav-links a {
-    color: var(--light);
+    color: white;
     font-weight: 500;
-    padding: 5px 0;
-    position: relative;
-    transition: all 0.3s ease;
     text-decoration: none;
+    position: relative;
+    padding: 5px 0;
 }
 
 .nav-links a::before {
@@ -107,12 +84,8 @@ header.scrolled {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary);
-    transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.nav-links a:hover {
-    color: var(--secondary);
+    background: #00fbff;
+    transition: width 0.3s;
 }
 
 .nav-links a:hover::before {
@@ -121,15 +94,20 @@ header.scrolled {
 
 .menu-toggle {
     display: none;
+    background: none;
+    border: none;
     cursor: pointer;
-    z-index: 100;
-    color: var(--light);
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
+    padding: 10px;
+    z-index: 1001;
 }
 
-.menu-toggle:hover {
-    color: var(--primary);
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: all 0.3s;
 }
 
 .home {
