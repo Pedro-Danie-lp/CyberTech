@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Tech | ExpoTech ECIT Adilina de Sousa Diniz</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/actions.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/stores.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/team.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">Cyber<span>Tech</span></div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#acoes">Ações</a></li>
-                    <li><a href="#lojas">Lojas</a></li>
-                    <li><a href="#team">Time</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cyber Tech | ExpoTech ECIT Adilina de Sousa Diniz</title>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/actions.css">
+            <link rel="stylesheet" href="./css/stores.css">
+            <link rel="stylesheet" href="./css/team.css">
+            <link rel="stylesheet" href="./css/animations.css">
+            <link rel="stylesheet" href="./css/responsive.css">
+        </head>
 
-    <main>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo">Cyber<span>Tech</span></div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#acoes">Ações</a></li>
+                        <li><a href="#lojas">Lojas</a></li>
+                        <li><a href="#team">Time</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <section class="home" id="home">
             <div class="particles" id="particles-js"></div>
             <div class="container">
@@ -45,127 +42,415 @@
         </section>
 
         <section class="actions" id="acoes">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Nossas Ações</h2>
-                    <p>Conheça as iniciativas que estamos desenvolvendo para ajudar o comércio local.</p>
-                </div>
-                <div class="act-container">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="/imagens/publicacoes/topstylus/p1.jpg" alt="Projeto TopStylus">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="/imagens/publicacoes/topstylus/p2.jpg" alt="Workshop de marketing">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="/imagens/publicacoes/topstylus/p3.jpg" alt="Soluções tecnológicas">
-                        </div>
-                        <a class="prev">❮</a>
-                        <a class="next">❯</a>
+            <div class="section-title">
+                <h2 class="animate-on-scroll">Nossas Ações</h2>
+                <p class="animate-on-scroll delay-1">Conheça as iniciativas que estamos desenvolvendo para ajudar o comércio local.</p>
+            </div>
+            <div class="act-container">
+                <div class="slideshow-container animate-on-scroll">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../imagens/publicacoes/topstylus/p1.jpg" alt="Projeto TopStylus">
+                        <div class="text">Divulgação de comércios locais</div>
                     </div>
-                    <div class="action-cards">
-                        <div class="action-card">
-                            <i class="fa fa-store"></i>
-                            <h3>Divulgação Digital</h3>
-                            <p>Criamos plataformas online para aumentar a visibilidade dos pequenos negócios.</p>
-                        </div>
-                        <div class="action-card">
-                            <i class="fa fa-chart-line"></i>
-                            <h3>Consultoria em Marketing</h3>
-                            <p>Orientamos comerciantes sobre estratégias para atrair mais clientes.</p>
-                        </div>
-                        <div class="action-card">
-                            <i class="fa fa-mobile-alt"></i>
-                            <h3>Tecnologia Acessível</h3>
-                            <p>Implementamos soluções tecnológicas de baixo custo para otimizar vendas.</p>
-                        </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../imagens/publicacoes/topstylus/p2.jpg" alt="Workshop de marketing">
+                        <div class="text">Workshops para comerciantes</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src=" ../imagens/publicacoes/topstylus/p3.jpg" alt="Soluções tecnológicas">
+                        <div class="text">Implementação de tecnologias</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+                <div class="action-cards">
+                    <div class="action-card animate-on-scroll delay-1">
+                        <i class="fas fa-store"></i>
+                        <h3>Divulgação Digital</h3>
+                        <p>Criamos plataformas online para aumentar a visibilidade dos pequenos negócios, com designs modernos e estratégias de SEO para melhor posicionamento.</p>
+                    </div>
+                    <div class="action-card animate-on-scroll delay-2">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Consultoria em Marketing</h3>
+                        <p>Orientamos comerciantes sobre estratégias eficazes para atrair mais clientes, incluindo presença digital e técnicas de vendas locais.</p>
+                    </div>
+                    <div class="action-card animate-on-scroll delay-3">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Tecnologia Acessível</h3>
+                        <p>Implementamos soluções tecnológicas de baixo custo para otimizar vendas, como sistemas de PDV simplificados e gestão de estoque.</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="stores" id="lojas">
+        
+    <section class="stores" id="lojas">
             <div class="container">
                 <div class="section-title">
-                    <h2>Lojas Parceiras</h2>
-                    <p>Conheça os estabelecimentos locais envolvidos em nosso projeto.</p>
+                    <h2 class="animate-on-scroll">Lojas Parceiras</h2>
+                    <p class="animate-on-scroll delay-1">Conheça os estabelecimentos locais envolvidos em nosso projeto.</p>
                 </div>
                 <div class="store-cards">
-                    <div class="card">
+                    <div class="card animate-on-scroll delay-1">
                         <div class="card-header">
-                            <img src="/imagens/lojas/lamaison.jpg" alt="La Maison">
+                            <img src="../imagens/lojas/lamaison.jpg" alt="La Maison">
                             <div><strong>La Maison</strong></div>
                             <a class="instagram-btn" href="https://www.instagram.com/use.lamaison" target="_blank">
-                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="card-content">
                             <p>Elegância, estilo e conforto.</p>
                         </div>
                         <div class="card-images">
-                            <img src="/imagens/publicacoes/lamaison/p1.jpg" alt="Produto La Maison">
-                            <img src="/imagens/publicacoes/lamaison/p2.jpg" alt="Produto La Maison">
-                            <img src="/imagens/publicacoes/lamaison/p3.jpg" alt="Produto La Maison">
+                            <img src="../imagens/publicacoes/lamaison/p1.jpg" alt="Produto La Maison 1">
+                            <img src="../imagens/publicacoes/lamaison/p2.jpg" alt="Produto La Maison 2">
+                            <img src="../imagens/publicacoes/lamaison/p3.jpg" alt="Produto La Maison 3">
                         </div>
+                    </div>
+
+                    <div class="card animate-on-scroll delay-2">
+                        <div class="card-header">
+                            <img src="../imagens/lojas/dd.jpg" alt="Drogaria Diamante">
+                            <div><strong>Drograria Diamante</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/topstylus_" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Mais saúde e economia para você.</p>
+                        </div>
+                        <div class="card-images">
+                            <img src="../imagens/publicacoes/drogdiamante/p1.jpg" alt="Produto Drogaria Diamante 1">
+                            <img src="../imagens/publicacoes/drogdiamante/p2.jpg" alt="Produto Drogaria Diamante 2">
+                            <img src="../imagens/publicacoes/drogdiamante/p3.jpg" alt="Produto Drogaria Diamante 3">
+                        </div>
+                    </div>
+
+                    <div class="card animate-on-scroll delay-3">
+                        <div class="card-header">
+                            <img src="../imagens/lojas/topstylus.jpg" alt="TopStylus">
+                            <div><strong>TopStylus</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/caprichos.byjannyvilar" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Moda casual e acessórios com estilo urbano e autêntico.</p>
+                        </div>
+                        <div class="card-images">
+                            <img src="../imagens/publicacoes/topstylus/p1.jpg" alt="Produto TopStylus 1">
+                            <img src="../imagens/publicacoes/topstylus/p2.jpg" alt="Produto TopStylus 2">
+                            <img src="../imagens/publicacoes/topstylus/p3.jpg" alt="Produto TopStylus 3">
+                        </div>
+                    </div>
+
+                    <div class="card animate-on-scroll delay-1">
+                            <div class="card-header">
+                            <img src="../imagens/lojas/ff.jpg" alt="FarmaFranco">
+                            <div><strong>FarmaFranco</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/farmafranco2" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            </div>
+                            <div class="card-content">
+                            <p>Melhores preços e melhor atendimento.</p>
+                            </div>
+                            <div class="card-images">
+                            <img src="../imagens/publicacoes/farmafranco/p1.jpg" alt="FarmaFranco 1">
+                            <img src="../imagens/publicacoes/farmafranco/p2.jpg" alt="FarmaFranco 2">
+                            <img src="../imagens/publicacoes/farmafranco/p3.jpg" alt="FarmaFranco 3">
+                            </div>
+                        </div>
+
+                        <div class="card animate-on-scroll delay-2">
+                            <div class="card-header">
+                            <img src="../imagens/lojas/pirralhos.jpg" alt="Pirralhos">
+                            <div><strong>Pirralhos kids e teens</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/pirralhos_kidseteens" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            </div>
+                            <div class="card-content">
+                            <p>Trabalhamos desde o recém nascido até 18 anos.</p>
+                            </div>
+                            <div class="card-images">
+                            <img src="../imagens/publicacoes/pirralhos/p1.jpg" alt="Pirralhos 1">
+                            <img src="../imagens/publicacoes/pirralhos/p2.jpg" alt="Pirralhos 2">
+                            <img src="../imagens/publicacoes/pirralhos/p3.jpg" alt="Pirralhos 3">
+                            </div>
+                        </div>
+
+                        <div class="card animate-on-scroll delay-3">
+                            <div class="card-header">
+                            <img src="../imagens/lojas/zm.jpg" alt="Zandra Modas">
+                            <div><strong>Zandra Modas</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/lizandramodas_" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            </div>
+                            <div class="card-content">
+                            <p>Confie no que você veste!</p>
+                            </div>
+                            <div class="card-images">
+                            <img src="../imagens/publicacoes/zandra/p1.jpeg" alt="Zandra 1">
+                            <img src="../imagens/publicacoes/zandra/p2.jpeg" alt="Zandra 2">
+                            <img src="../imagens/publicacoes/zandra/p3.jpeg" alt="Zandra 3">
+                            </div>
+                        </div>
+
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                            <img src="../imagens/lojas/fp.webp" alt="Dra Frankiliane">
+                            <div><strong>Dra Frankiliane</strong></div>
+                            <a class="instagram-btn" href="https://www.instagram.com/caprichos.byjannyvilar" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                            <div class="card-content">
+                            <p>Fisioterapeuta e instrutora de pilates.</p>
+                            </div>
+                            <div class="card-images">
+                            <img src="../imagens/publicacoes/fp/p1.webp" alt="Dra Frankiliane 1">
+                            <img src="../imagens/publicacoes/fp/p2.webp" alt="Dra Frankiliane 2">
+                            <img src="../imagens/publicacoes/fp/p3.webp" alt="Dra Frankiliane 3">
+                            </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="team" id="team">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Nosso Time</h2>
-                    <p>Conheça os talentos por trás do nosso sucesso</p>
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nosso Time</h2>
+                <p>Conheça os talentos por trás do nosso sucesso</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="../imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.56.jpeg" alt="Time de marketing">
+                        
+                    </div>
+                    <div class="team-info">
+                        <h3>Time de marketing</h3>
+                        <p>Especialista em estratégias digitais e crescimento de marca.</p>
+                    </div>
                 </div>
-                <div class="team-grid">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="/imagens/equipes/team1.jpg" alt="Time de marketing">
-                        </div>
-                        <div class="team-info">
-                            <h3>Time de marketing</h3>
-                            <p>Especialista em estratégias digitais e crescimento de marca.</p>
-                        </div>
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="../imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.55.jpeg" alt="Time de design">
+                        
+                    </div>
+                    <div class="team-info">
+                        <h3>Time de design</h3>
+                        <p>Cria experiências visuais memoráveis e interfaces intuitivas.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="../imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.56 (2).jpeg" alt="Time operacional">
+                        
+                    </div>
+                    <div class="team-info">
+                        <h3>Time operacional</h3>
+                        <p>Garante que todos os processos funcionem sem problemas.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="../imagens/equipes/WhatsApp Image 2025-05-11 at 11.45.56 (3).jpeg" alt="Time de desenvolvedores">
+                        
+                    </div>
+                    <div class="team-info">
+                        <h3>Time de desenvolvedores</h3>
+                        <p>Transforma ideias em soluções tecnológicas robustas.</p>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>  
         <section class="contact" id="contato">
             <div class="container">
                 <div class="section-title">
                     <h2>Entre em Contato</h2>
-                    <p>Tem alguma dúvida ou quer participar do projeto?</p>
+                    <p>Tem alguma dúvida ou quer participar do projeto? Mande uma mensagem!</p>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Seu nome" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Seu email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder="Sua mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                </form>
+                <div class="contact-form" id="contactFormElement">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
             </div>
         </section>
-    </main>
-
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <div class="container">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">Cyber Tech © 2023 | Projeto desenvolvido pelos alunos do 3º ano técnico da ECIT Adilina de Sousa Diniz</p>
             </div>
-            <p class="copyright">Cyber Tech © 2023 | Projeto desenvolvido pelos alunos do 3º ano técnico</p>
-        </div>
-    </footer>
+        </footer>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
 
-    <script src="js/main.js"></script>
-</body>
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+
+
+                setInterval(() => {
+                    plusSlides(1);
+                }, 5000);
+
+
+                function checkVisibility() {
+                    const elements = document.querySelectorAll('.animate-on-scroll');
+                    
+                    elements.forEach(element => {
+                        const elementPosition = element.getBoundingClientRect().top;
+                        const screenPosition = window.innerHeight / 1.2;
+                        
+                        if (elementPosition < screenPosition) {
+                            element.classList.add('visible');
+                        }
+                    });
+                }
+
+                function checkVisibility() {
+                const elements = document.querySelectorAll('.animate-on-scroll');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.2;
+                    
+                    if (elementPosition < screenPosition) {
+                        element.classList.add('visible');
+                    }
+                });
+                }                
+
+                window.addEventListener('scroll', checkVisibility);
+                window.addEventListener('load', checkVisibility);
+
+                document.addEventListener('DOMContentLoaded', function() {
+                const contactForm = document.getElementById('contactFormElement');
+                
+                function checkScroll() {
+                    const rect = contactForm.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.8);
+                    
+                    if (isVisible) {
+                        contactForm.classList.add('visible');
+                        window.removeEventListener('scroll', checkScroll);
+                    }
+                }
+                
+                window.addEventListener('scroll', checkScroll);
+                checkScroll();
+
+                const particlesContainer = document.getElementById('particles-js');
+                const particleCount = 30;
+                
+                for (let i = 0; i < particleCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    
+                    const size = Math.random() * 4 + 2;
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    
+                    particle.style.left = `${Math.random() * 100}%`;
+                    particle.style.top = `${Math.random() * 100}%`;
+                    
+                    particle.style.animationDelay = `${Math.random() * 5}s`;
+                    
+            
+                    particle.style.animationDuration = `${Math.random() * 3 + 3}s`;
+                    
+                    particlesContainer.appendChild(particle);
+                }
+                });
+
+                document.addEventListener('DOMContentLoaded', function() {
+                const teamCards = document.querySelectorAll('.team-card');
+                
+                teamCards.forEach((card, index) => {
+                    card.style.transitionDelay = `${index * 0.1}s`;
+                    card.classList.add('animate-on-scroll');
+                });
+                
+                function checkTeamVisibility() {
+                    const teamSection = document.querySelector('.team');
+                    const teamPosition = teamSection.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if(teamPosition < screenPosition) {
+                        teamCards.forEach(card => {
+                            card.classList.add('visible');
+                        });
+                        window.removeEventListener('scroll', checkTeamVisibility);
+                    }
+                }
+                
+                window.addEventListener('scroll', checkTeamVisibility);
+                checkTeamVisibility();
+                });
+        
+        </script>
+    </body>
 </html>

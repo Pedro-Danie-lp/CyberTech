@@ -24,9 +24,8 @@ body {
 }
 
 .header-container {
-    max-width: 1200px;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +36,7 @@ header {
     backdrop-filter: blur(10px);
     position: fixed;    
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     padding: 15px 0;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-bottom: 1px solid rgba(0, 251, 255, 0.1);
@@ -139,22 +138,11 @@ header.scrolled {
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('/imagens/wp5426303-2268610260.jpg') center/cover no-repeat;
+                url('../imagens/wp5426303-2268610260.jpg') center/cover no-repeat;
     color: var(--light);
     text-align: center;
     padding-top: 80px;
     overflow: hidden;
-}
-
-.home::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(transparent, var(--light));
-    z-index: 1;
 }
 
 .home-content {
