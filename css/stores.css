@@ -5,19 +5,6 @@
     overflow: hidden;
 }
 
-.stores::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle, #00ffea 0%, rgba(85, 185, 177, 0.1) 70%);
-    z-index: 0;
-    animation: float 6s ease-in-out infinite;
-}
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -85,7 +72,8 @@
     display: flex;
     align-items: center;
     padding: 25px;
-    background: linear-gradient(135deg, #181818, #00ffea);
+    background: linear-gradient(135deg, #000000, #000000, #018075,#94fff6, #000000
+    );
     color: #ffffff;
     position: relative;
     z-index: 1;
