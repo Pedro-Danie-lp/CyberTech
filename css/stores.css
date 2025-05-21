@@ -54,7 +54,7 @@
 }
 
 .card {
-    background: #ffffff;
+    background: #ffffffbb;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
     overflow: hidden;
@@ -122,8 +122,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366);
-    color: #ffffff;
+    background: #fff;
+    color:  #dc2743;
     font-size: 18px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -131,7 +131,8 @@
 }
 
 .instagram-btn:hover {
-    transform: scale(1.1);
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366);
+    color: #ffffff;
     box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
 }
 
